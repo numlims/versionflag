@@ -1,0 +1,30 @@
+# init
+
+init holds the versionflag function.
+
+``//__init__.py:
+``import``
+``flag``
+``
+
+flag adds a version flag for module to the argument parser.
+
+``/flag:
+def flag(parser:argparse.ArgumentParser, module:str):
+    ``.``
+``
+
+add a version flag to show the version.
+
+``
+    version = importlib.metadata.version(module)
+    parser.add_argument("--version", help="print the program version", action="version", version=f"{module} version {version}")
+``
+
+import.
+
+``/import:
+import importlib.metadata
+import argparse
+``
+
