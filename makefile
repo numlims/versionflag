@@ -10,7 +10,7 @@ version = $(shell git tag | tail -1 | tr -d v)
 
 all:
 	ct versionflag/init.ct
-	#ct versionflag/main.ct
+	ct versionflag/main.ct
 
 build:
 	make
