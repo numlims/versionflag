@@ -13,24 +13,6 @@ api doc [here](https://numlims.github.io/versionflag/).
 
 ## install
 
-download versionflag whl from
-[here](https://github.com/numlims/versionflag/releases). install whl with
-pip:
-
-```
-pip install versionflag-<version>.whl
-```
-
-reference from your `pyproject.toml`, e.g.:
-
-```
-dependencies = [
-  "versionflag @ git+https://github.com/numlims/versionflag.git"
-]
-```
-
-## install
-
 reference from your `pyproject.toml`, e.g.:
 
 ```
@@ -58,14 +40,3 @@ make doc
 ```
 
 
-## dev
-
-edit [`versionflag/main.ct`](./versionflag/main.ct) and [`versionflag/init.ct`](./versionflag/init.ct).
-
-generate the code from ct with [ct](https://github.com/tnustrings/ct) or [ct for vscode](https://marketplace.visualstudio.com/items?itemName=tnustrings.codetext).
-
-build and install:
-
-```
-make install
-```
